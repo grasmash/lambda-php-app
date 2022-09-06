@@ -26,3 +26,4 @@ package:
     patterns:
         - '!node_modules/**'
         - '!tests/**'
+        - '!.idea'
