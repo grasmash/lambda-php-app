@@ -15,5 +15,15 @@
         "psr-4": {
             "Grasmash\\PhpLambdaFunction\\Tests\\": "tests/"
         }
+    },
+    "scripts": {
+        "deploy": [
+            "@composer install --prefer-dist --optimize-autoloader --no-dev",
+            "serverless deploy"
+        ],
+        "test": [
+            "@composer install",
+            "phpunit"
+        ]
     }
 }
